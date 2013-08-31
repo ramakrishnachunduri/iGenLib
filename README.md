@@ -20,6 +20,6 @@ List of Extensions
 - NSDate extension to convert date to string based on the format.
 - NSDate extensions to calculate difference between dates.
 - NSObject extensions to prevent Unrecognized Selector sent when we are unaware of targeted class
-- NSString extensions to help in Searching,formatting,converting to date,calculating no.of.lines�etc
+- NSString extensions to help in Searching,formatting,converting to date,calculating no.of.lines etc
 - NSThread extensions to help passing multiple objects when detaching a new thread.
 - NSInvocation extensions to help passing multiple objects for invocations.
