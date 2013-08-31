@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		E9B04207146BB36300D137A0 /* iGenLib Documentation */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E9B0420C146BB38D00D137A0 /* Build configuration list for PBXAggregateTarget "iGenLib Documentation" */;
+			buildPhases = (
+				E9B04206146BB36300D137A0 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "iGenLib Documentation";
+			productName = "iGenLib Documentation";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		AA747D9F0F9514B9006C5449 /* iGenLib_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* iGenLib_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		E93D85BB1472557D0004CDBB /* NSMutableArray+GeneralExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = E93D85B91472557D0004CDBB /* NSMutableArray+GeneralExtensions.m */; };
+		E93D85BC1472557D0004CDBB /* NSMutableArray+GeneralExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = E93D85BA1472557D0004CDBB /* NSMutableArray+GeneralExtensions.h */; };
+		E96306EC171D2839003B64D8 /* NSObject+MultiObjectExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = E96306EA171D2838003B64D8 /* NSObject+MultiObjectExtensions.m */; };
+		E96306ED171D2839003B64D8 /* NSObject+MultiObjectExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = E96306EB171D2838003B64D8 /* NSObject+MultiObjectExtensions.h */; };
+		E9829BB3130BA50F00C38CCC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9829BB2130BA50F00C38CCC /* CoreGraphics.framework */; };
+		E9829BB9130BA52700C38CCC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9829BB8130BA52700C38CCC /* UIKit.framework */; };
+		E9829C10130BABCD00C38CCC /* iGenCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = E9829C0E130BABCD00C38CCC /* iGenCommon.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E9829C11130BABCD00C38CCC /* iGenCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = E9829C0F130BABCD00C38CCC /* iGenCommon.m */; };
+		E9A065A41713DFEF0048C113 /* NSThread+iGenLib.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A065A01713DFEF0048C113 /* NSThread+iGenLib.m */; };
+		E9A065A51713DFEF0048C113 /* NSThread+iGenLib.h in Headers */ = {isa = PBXBuildFile; fileRef = E9A065A11713DFEF0048C113 /* NSThread+iGenLib.h */; };
+		E9A065A61713DFEF0048C113 /* NSInvocation+iGenLib.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A065A21713DFEF0048C113 /* NSInvocation+iGenLib.m */; };
+		E9A065A71713DFEF0048C113 /* NSInvocation+iGenLib.h in Headers */ = {isa = PBXBuildFile; fileRef = E9A065A31713DFEF0048C113 /* NSInvocation+iGenLib.h */; };
+		E9A30D2B13E802B900AA0617 /* iGenCustomFontLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = E9A30D0813E802B900AA0617 /* iGenCustomFontLabel.h */; };
+		E9A30D2C13E802B900AA0617 /* iGenCustomFontLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A30D0913E802B900AA0617 /* iGenCustomFontLabel.m */; };
+		E9A30D2D13E802B900AA0617 /* iGenGridView.h in Headers */ = {isa = PBXBuildFile; fileRef = E9A30D0B13E802B900AA0617 /* iGenGridView.h */; };
+		E9A30D2E13E802B900AA0617 /* iGenGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A30D0C13E802B900AA0617 /* iGenGridView.m */; };
+		E9A30D2F13E802B900AA0617 /* NSData+iGenLib+B64.h in Headers */ = {isa = PBXBuildFile; fileRef = E9A30D1013E802B900AA0617 /* NSData+iGenLib+B64.h */; };
+		E9A30D3013E802B900AA0617 /* NSData+iGenLib+B64.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A30D1113E802B900AA0617 /* NSData+iGenLib+B64.m */; };
+		E9A30D3113E802B900AA0617 /* NSArray+GeneralExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = E9A30D1213E802B900AA0617 /* NSArray+GeneralExtensions.h */; };
+		E9A30D3213E802B900AA0617 /* NSArray+GeneralExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A30D1313E802B900AA0617 /* NSArray+GeneralExtensions.m */; };
+		E9A30D3313E802B900AA0617 /* NSBundle+GeneralExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = E9A30D1413E802B900AA0617 /* NSBundle+GeneralExtensions.h */; };
+		E9A30D3413E802B900AA0617 /* NSBundle+GeneralExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A30D1513E802B900AA0617 /* NSBundle+GeneralExtensions.m */; };
+		E9A30D3513E802B900AA0617 /* NSDate+GeneralExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = E9A30D1613E802B900AA0617 /* NSDate+GeneralExtensions.h */; };
+		E9A30D3613E802B900AA0617 /* NSDate+GeneralExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A30D1713E802B900AA0617 /* NSDate+GeneralExtensions.m */; };
+		E9A30D3713E802B900AA0617 /* NSObject+GeneralExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = E9A30D1813E802B900AA0617 /* NSObject+GeneralExtensions.h */; };
+		E9A30D3813E802B900AA0617 /* NSObject+GeneralExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A30D1913E802B900AA0617 /* NSObject+GeneralExtensions.m */; };
+		E9A30D3913E802B900AA0617 /* NSString+iGenLib.h in Headers */ = {isa = PBXBuildFile; fileRef = E9A30D1A13E802B900AA0617 /* NSString+iGenLib.h */; };
+		E9A30D3A13E802B900AA0617 /* NSString+iGenLib.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A30D1B13E802B900AA0617 /* NSString+iGenLib.m */; };
+		E9A30D3B13E802B900AA0617 /* iGenLibExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = E9A30D1C13E802B900AA0617 /* iGenLibExtensions.h */; };
+		E9A30D3C13E802B900AA0617 /* UIAlertView+iGenLib.h in Headers */ = {isa = PBXBuildFile; fileRef = E9A30D1D13E802B900AA0617 /* UIAlertView+iGenLib.h */; };
+		E9A30D3D13E802B900AA0617 /* UIAlertView+iGenLib.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A30D1E13E802B900AA0617 /* UIAlertView+iGenLib.m */; };
+		E9A30D3E13E802B900AA0617 /* UIColor+iGenLib.h in Headers */ = {isa = PBXBuildFile; fileRef = E9A30D1F13E802B900AA0617 /* UIColor+iGenLib.h */; };
+		E9A30D3F13E802B900AA0617 /* UIColor+iGenLib.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A30D2013E802B900AA0617 /* UIColor+iGenLib.m */; };
+		E9A30D4013E802B900AA0617 /* UIImage+iGenLib.h in Headers */ = {isa = PBXBuildFile; fileRef = E9A30D2113E802B900AA0617 /* UIImage+iGenLib.h */; };
+		E9A30D4113E802B900AA0617 /* UIImage+iGenLib.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A30D2213E802B900AA0617 /* UIImage+iGenLib.m */; };
+		E9A30D4213E802B900AA0617 /* UIView+iGenLib.h in Headers */ = {isa = PBXBuildFile; fileRef = E9A30D2313E802B900AA0617 /* UIView+iGenLib.h */; };
+		E9A30D4313E802B900AA0617 /* UIView+iGenLib.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A30D2413E802B900AA0617 /* UIView+iGenLib.m */; };
+		E9A30D4413E802B900AA0617 /* NSObject+XML+iGenLib.h in Headers */ = {isa = PBXBuildFile; fileRef = E9A30D2613E802B900AA0617 /* NSObject+XML+iGenLib.h */; };
+		E9A30D4513E802B900AA0617 /* NSObject+XML+iGenLib.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A30D2713E802B900AA0617 /* NSObject+XML+iGenLib.m */; };
+		E9A30D4613E802B900AA0617 /* XMLReader.h in Headers */ = {isa = PBXBuildFile; fileRef = E9A30D2813E802B900AA0617 /* XMLReader.h */; };
+		E9A30D4713E802B900AA0617 /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A30D2913E802B900AA0617 /* XMLReader.m */; };
+		E9A30F3213E80D9300AA0617 /* iGenGridViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = E9A30F3113E80D9300AA0617 /* iGenGridViewDelegate.h */; };
+		E9BEC4EF13EBCCA400EF8222 /* iGenImageScaleController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BEC4ED13EBCCA400EF8222 /* iGenImageScaleController.m */; };
+		E9BEC4F013EBCCA400EF8222 /* iGenImageScaleController.h in Headers */ = {isa = PBXBuildFile; fileRef = E9BEC4EE13EBCCA400EF8222 /* iGenImageScaleController.h */; };
+		E9BEC50913EBCD5D00EF8222 /* iGenImageScaleControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = E9BEC50713EBCD5D00EF8222 /* iGenImageScaleControllerDelegate.h */; };
+		E9C45B4A14681639003E0AF1 /* UIScreen+iGenLib.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C45B4814681639003E0AF1 /* UIScreen+iGenLib.m */; };
+		E9C45B4B14681639003E0AF1 /* UIScreen+iGenLib.h in Headers */ = {isa = PBXBuildFile; fileRef = E9C45B4914681639003E0AF1 /* UIScreen+iGenLib.h */; };
+		E9C45B50146817FB003E0AF1 /* UITableView+iGenLib.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C45B4E146817FB003E0AF1 /* UITableView+iGenLib.m */; };
+		E9C45B51146817FB003E0AF1 /* UITableView+iGenLib.h in Headers */ = {isa = PBXBuildFile; fileRef = E9C45B4F146817FB003E0AF1 /* UITableView+iGenLib.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E9A065AB1713E3630048C113 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9B04207146BB36300D137A0;
+			remoteInfo = "iGenLib Documentation";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AA747D9E0F9514B9006C5449 /* iGenLib_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iGenLib_Prefix.pch; path = "Users/administrator/Documents/Ramki/Development/iGenLib/iGenLib/iGenLib_Prefix.pch"; sourceTree = SDKROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libiGenLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libiGenLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E93D85B91472557D0004CDBB /* NSMutableArray+GeneralExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+GeneralExtensions.m"; sourceTree = "<group>"; };
+		E93D85BA1472557D0004CDBB /* NSMutableArray+GeneralExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+GeneralExtensions.h"; sourceTree = "<group>"; };
+		E96306EA171D2838003B64D8 /* NSObject+MultiObjectExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MultiObjectExtensions.m"; sourceTree = "<group>"; };
+		E96306EB171D2838003B64D8 /* NSObject+MultiObjectExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MultiObjectExtensions.h"; sourceTree = "<group>"; };
+		E96466721699D44B00EE5477 /* doxy_header.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = doxy_header.html; sourceTree = "<group>"; };
+		E96466731699D44B00EE5477 /* doxy_footer.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = doxy_footer.html; sourceTree = "<group>"; };
+		E9829BB2130BA50F00C38CCC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E9829BB8130BA52700C38CCC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E9829C0E130BABCD00C38CCC /* iGenCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iGenCommon.h; sourceTree = "<group>"; };
+		E9829C0F130BABCD00C38CCC /* iGenCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iGenCommon.m; sourceTree = "<group>"; };
+		E9A065A01713DFEF0048C113 /* NSThread+iGenLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSThread+iGenLib.m"; sourceTree = "<group>"; };
+		E9A065A11713DFEF0048C113 /* NSThread+iGenLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSThread+iGenLib.h"; sourceTree = "<group>"; };
+		E9A065A21713DFEF0048C113 /* NSInvocation+iGenLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSInvocation+iGenLib.m"; sourceTree = "<group>"; };
+		E9A065A31713DFEF0048C113 /* NSInvocation+iGenLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSInvocation+iGenLib.h"; sourceTree = "<group>"; };
+		E9A30D0813E802B900AA0617 /* iGenCustomFontLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iGenCustomFontLabel.h; sourceTree = "<group>"; };
+		E9A30D0913E802B900AA0617 /* iGenCustomFontLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iGenCustomFontLabel.m; sourceTree = "<group>"; };
+		E9A30D0B13E802B900AA0617 /* iGenGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iGenGridView.h; sourceTree = "<group>"; };
+		E9A30D0C13E802B900AA0617 /* iGenGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iGenGridView.m; sourceTree = "<group>"; };
+		E9A30D1013E802B900AA0617 /* NSData+iGenLib+B64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+iGenLib+B64.h"; sourceTree = "<group>"; };
+		E9A30D1113E802B900AA0617 /* NSData+iGenLib+B64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+iGenLib+B64.m"; sourceTree = "<group>"; };
+		E9A30D1213E802B900AA0617 /* NSArray+GeneralExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+GeneralExtensions.h"; sourceTree = "<group>"; };
+		E9A30D1313E802B900AA0617 /* NSArray+GeneralExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+GeneralExtensions.m"; sourceTree = "<group>"; };
+		E9A30D1413E802B900AA0617 /* NSBundle+GeneralExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+GeneralExtensions.h"; sourceTree = "<group>"; };
+		E9A30D1513E802B900AA0617 /* NSBundle+GeneralExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+GeneralExtensions.m"; sourceTree = "<group>"; };
+		E9A30D1613E802B900AA0617 /* NSDate+GeneralExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+GeneralExtensions.h"; sourceTree = "<group>"; };
+		E9A30D1713E802B900AA0617 /* NSDate+GeneralExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+GeneralExtensions.m"; sourceTree = "<group>"; };
+		E9A30D1813E802B900AA0617 /* NSObject+GeneralExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+GeneralExtensions.h"; sourceTree = "<group>"; };
+		E9A30D1913E802B900AA0617 /* NSObject+GeneralExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+GeneralExtensions.m"; sourceTree = "<group>"; };
+		E9A30D1A13E802B900AA0617 /* NSString+iGenLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+iGenLib.h"; sourceTree = "<group>"; };
+		E9A30D1B13E802B900AA0617 /* NSString+iGenLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+iGenLib.m"; sourceTree = "<group>"; };
+		E9A30D1C13E802B900AA0617 /* iGenLibExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iGenLibExtensions.h; sourceTree = "<group>"; };
+		E9A30D1D13E802B900AA0617 /* UIAlertView+iGenLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+iGenLib.h"; sourceTree = "<group>"; };
+		E9A30D1E13E802B900AA0617 /* UIAlertView+iGenLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+iGenLib.m"; sourceTree = "<group>"; };
+		E9A30D1F13E802B900AA0617 /* UIColor+iGenLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+iGenLib.h"; sourceTree = "<group>"; };
+		E9A30D2013E802B900AA0617 /* UIColor+iGenLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+iGenLib.m"; sourceTree = "<group>"; };
+		E9A30D2113E802B900AA0617 /* UIImage+iGenLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+iGenLib.h"; sourceTree = "<group>"; };
+		E9A30D2213E802B900AA0617 /* UIImage+iGenLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+iGenLib.m"; sourceTree = "<group>"; };
+		E9A30D2313E802B900AA0617 /* UIView+iGenLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+iGenLib.h"; sourceTree = "<group>"; };
+		E9A30D2413E802B900AA0617 /* UIView+iGenLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+iGenLib.m"; sourceTree = "<group>"; };
+		E9A30D2613E802B900AA0617 /* NSObject+XML+iGenLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+XML+iGenLib.h"; sourceTree = "<group>"; };
+		E9A30D2713E802B900AA0617 /* NSObject+XML+iGenLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+XML+iGenLib.m"; sourceTree = "<group>"; };
+		E9A30D2813E802B900AA0617 /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
+		E9A30D2913E802B900AA0617 /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
+		E9A30F3113E80D9300AA0617 /* iGenGridViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iGenGridViewDelegate.h; sourceTree = "<group>"; };
+		E9BEC4ED13EBCCA400EF8222 /* iGenImageScaleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iGenImageScaleController.m; sourceTree = "<group>"; };
+		E9BEC4EE13EBCCA400EF8222 /* iGenImageScaleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iGenImageScaleController.h; sourceTree = "<group>"; };
+		E9BEC50713EBCD5D00EF8222 /* iGenImageScaleControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iGenImageScaleControllerDelegate.h; sourceTree = "<group>"; };
+		E9C45B4814681639003E0AF1 /* UIScreen+iGenLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+iGenLib.m"; sourceTree = "<group>"; };
+		E9C45B4914681639003E0AF1 /* UIScreen+iGenLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+iGenLib.h"; sourceTree = "<group>"; };
+		E9C45B4E146817FB003E0AF1 /* UITableView+iGenLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+iGenLib.m"; sourceTree = "<group>"; };
+		E9C45B4F146817FB003E0AF1 /* UITableView+iGenLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+iGenLib.h"; sourceTree = "<group>"; };
+		E9EC99D816B13D13009E9DFC /* DoxyFile */ = {isa = PBXFileReference; lastKnownFileType = text; path = DoxyFile; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+				E9829BB3130BA50F00C38CCC /* CoreGraphics.framework in Frameworks */,
+				E9829BB9130BA52700C38CCC /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libiGenLib.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* iGenLib */ = {
+			isa = PBXGroup;
+			children = (
+				E91D7D761696DD1B0090C035 /* Resources */,
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+				E9829BB8130BA52700C38CCC /* UIKit.framework */,
+			);
+			name = iGenLib;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+				E9829BB2130BA50F00C38CCC /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E9A30D0513E802B800AA0617 /* UI */,
+				E9A30D0D13E802B900AA0617 /* Common */,
+				E9829C0E130BABCD00C38CCC /* iGenCommon.h */,
+				E9829C0F130BABCD00C38CCC /* iGenCommon.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* iGenLib_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		E91D7D761696DD1B0090C035 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E9EC99D816B13D13009E9DFC /* DoxyFile */,
+				E96466721699D44B00EE5477 /* doxy_header.html */,
+				E96466731699D44B00EE5477 /* doxy_footer.html */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E9A30D0513E802B800AA0617 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E9BEC44A13EBC00800EF8222 /* Controllers */,
+				E9A30D0613E802B900AA0617 /* Controls */,
+			);
+			name = UI;
+			path = Classes/UI;
+			sourceTree = "<group>";
+		};
+		E9A30D0613E802B900AA0617 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				E9A30D0A13E802B900AA0617 /* GridView */,
+				E9A30D0713E802B900AA0617 /* CustomFontLabel */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		E9A30D0713E802B900AA0617 /* CustomFontLabel */ = {
+			isa = PBXGroup;
+			children = (
+				E9A30D0813E802B900AA0617 /* iGenCustomFontLabel.h */,
+				E9A30D0913E802B900AA0617 /* iGenCustomFontLabel.m */,
+			);
+			path = CustomFontLabel;
+			sourceTree = "<group>";
+		};
+		E9A30D0A13E802B900AA0617 /* GridView */ = {
+			isa = PBXGroup;
+			children = (
+				E9A30F3113E80D9300AA0617 /* iGenGridViewDelegate.h */,
+				E9A30D0B13E802B900AA0617 /* iGenGridView.h */,
+				E9A30D0C13E802B900AA0617 /* iGenGridView.m */,
+			);
+			path = GridView;
+			sourceTree = "<group>";
+		};
+		E9A30D0D13E802B900AA0617 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E9A30D0E13E802B900AA0617 /* Extensions */,
+				E9A30D2A13E802B900AA0617 /* Tools */,
+			);
+			name = Common;
+			path = Classes/Common;
+			sourceTree = "<group>";
+		};
+		E9A30D0E13E802B900AA0617 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E9A30D1C13E802B900AA0617 /* iGenLibExtensions.h */,
+				E9A30D2513E802B900AA0617 /* XML */,
+				E9A30D0F13E802B900AA0617 /* B64 */,
+				E9A30D1213E802B900AA0617 /* NSArray+GeneralExtensions.h */,
+				E9A30D1313E802B900AA0617 /* NSArray+GeneralExtensions.m */,
+				E93D85BA1472557D0004CDBB /* NSMutableArray+GeneralExtensions.h */,
+				E93D85B91472557D0004CDBB /* NSMutableArray+GeneralExtensions.m */,
+				E9A30D1413E802B900AA0617 /* NSBundle+GeneralExtensions.h */,
+				E9A30D1513E802B900AA0617 /* NSBundle+GeneralExtensions.m */,
+				E9A30D1613E802B900AA0617 /* NSDate+GeneralExtensions.h */,
+				E9A30D1713E802B900AA0617 /* NSDate+GeneralExtensions.m */,
+				E9A30D1813E802B900AA0617 /* NSObject+GeneralExtensions.h */,
+				E9A30D1913E802B900AA0617 /* NSObject+GeneralExtensions.m */,
+				E96306EA171D2838003B64D8 /* NSObject+MultiObjectExtensions.m */,
+				E96306EB171D2838003B64D8 /* NSObject+MultiObjectExtensions.h */,
+				E9A30D1A13E802B900AA0617 /* NSString+iGenLib.h */,
+				E9A30D1B13E802B900AA0617 /* NSString+iGenLib.m */,
+				E9A30D1D13E802B900AA0617 /* UIAlertView+iGenLib.h */,
+				E9A30D1E13E802B900AA0617 /* UIAlertView+iGenLib.m */,
+				E9A30D1F13E802B900AA0617 /* UIColor+iGenLib.h */,
+				E9A30D2013E802B900AA0617 /* UIColor+iGenLib.m */,
+				E9A30D2113E802B900AA0617 /* UIImage+iGenLib.h */,
+				E9A30D2213E802B900AA0617 /* UIImage+iGenLib.m */,
+				E9C45B4914681639003E0AF1 /* UIScreen+iGenLib.h */,
+				E9C45B4814681639003E0AF1 /* UIScreen+iGenLib.m */,
+				E9A30D2313E802B900AA0617 /* UIView+iGenLib.h */,
+				E9A30D2413E802B900AA0617 /* UIView+iGenLib.m */,
+				E9C45B4F146817FB003E0AF1 /* UITableView+iGenLib.h */,
+				E9C45B4E146817FB003E0AF1 /* UITableView+iGenLib.m */,
+				E9A065A11713DFEF0048C113 /* NSThread+iGenLib.h */,
+				E9A065A01713DFEF0048C113 /* NSThread+iGenLib.m */,
+				E9A065A31713DFEF0048C113 /* NSInvocation+iGenLib.h */,
+				E9A065A21713DFEF0048C113 /* NSInvocation+iGenLib.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E9A30D0F13E802B900AA0617 /* B64 */ = {
+			isa = PBXGroup;
+			children = (
+				E9A30D1013E802B900AA0617 /* NSData+iGenLib+B64.h */,
+				E9A30D1113E802B900AA0617 /* NSData+iGenLib+B64.m */,
+			);
+			path = B64;
+			sourceTree = "<group>";
+		};
+		E9A30D2513E802B900AA0617 /* XML */ = {
+			isa = PBXGroup;
+			children = (
+				E9A30D2613E802B900AA0617 /* NSObject+XML+iGenLib.h */,
+				E9A30D2713E802B900AA0617 /* NSObject+XML+iGenLib.m */,
+				E9A30D2813E802B900AA0617 /* XMLReader.h */,
+				E9A30D2913E802B900AA0617 /* XMLReader.m */,
+			);
+			path = XML;
+			sourceTree = "<group>";
+		};
+		E9A30D2A13E802B900AA0617 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		E9BEC44A13EBC00800EF8222 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E9BEC44C13EBC00800EF8222 /* Move & Scale */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E9BEC44C13EBC00800EF8222 /* Move & Scale */ = {
+			isa = PBXGroup;
+			children = (
+				E9BEC4EE13EBCCA400EF8222 /* iGenImageScaleController.h */,
+				E9BEC4ED13EBCCA400EF8222 /* iGenImageScaleController.m */,
+				E9BEC50713EBCD5D00EF8222 /* iGenImageScaleControllerDelegate.h */,
+			);
+			path = "Move & Scale";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA747D9F0F9514B9006C5449 /* iGenLib_Prefix.pch in Headers */,
+				E9829C10130BABCD00C38CCC /* iGenCommon.h in Headers */,
+				E9A30D2B13E802B900AA0617 /* iGenCustomFontLabel.h in Headers */,
+				E9A30D2D13E802B900AA0617 /* iGenGridView.h in Headers */,
+				E9A30D2F13E802B900AA0617 /* NSData+iGenLib+B64.h in Headers */,
+				E9A30D3113E802B900AA0617 /* NSArray+GeneralExtensions.h in Headers */,
+				E9A30D3313E802B900AA0617 /* NSBundle+GeneralExtensions.h in Headers */,
+				E9A30D3513E802B900AA0617 /* NSDate+GeneralExtensions.h in Headers */,
+				E9A30D3713E802B900AA0617 /* NSObject+GeneralExtensions.h in Headers */,
+				E9A30D3913E802B900AA0617 /* NSString+iGenLib.h in Headers */,
+				E9A30D3B13E802B900AA0617 /* iGenLibExtensions.h in Headers */,
+				E9A30D3C13E802B900AA0617 /* UIAlertView+iGenLib.h in Headers */,
+				E9A30D3E13E802B900AA0617 /* UIColor+iGenLib.h in Headers */,
+				E9A30D4013E802B900AA0617 /* UIImage+iGenLib.h in Headers */,
+				E9A30D4213E802B900AA0617 /* UIView+iGenLib.h in Headers */,
+				E9A30D4413E802B900AA0617 /* NSObject+XML+iGenLib.h in Headers */,
+				E9A30D4613E802B900AA0617 /* XMLReader.h in Headers */,
+				E9A30F3213E80D9300AA0617 /* iGenGridViewDelegate.h in Headers */,
+				E9BEC4F013EBCCA400EF8222 /* iGenImageScaleController.h in Headers */,
+				E9BEC50913EBCD5D00EF8222 /* iGenImageScaleControllerDelegate.h in Headers */,
+				E9C45B4B14681639003E0AF1 /* UIScreen+iGenLib.h in Headers */,
+				E9C45B51146817FB003E0AF1 /* UITableView+iGenLib.h in Headers */,
+				E93D85BC1472557D0004CDBB /* NSMutableArray+GeneralExtensions.h in Headers */,
+				E9A065A51713DFEF0048C113 /* NSThread+iGenLib.h in Headers */,
+				E9A065A71713DFEF0048C113 /* NSInvocation+iGenLib.h in Headers */,
+				E96306ED171D2839003B64D8 /* NSObject+MultiObjectExtensions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* iGenLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "iGenLib" */;
+			buildPhases = (
+				E987AE9F133B23D2000FC408 /* Resources */,
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9A065AC1713E3630048C113 /* PBXTargetDependency */,
+			);
+			name = iGenLib;
+			productName = iGenLib;
+			productReference = D2AAC07E0554694100DB518D /* libiGenLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "iGenLib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* iGenLib */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* iGenLib */,
+				E9B04207146BB36300D137A0 /* iGenLib Documentation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E987AE9F133B23D2000FC408 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E9B04206146BB36300D137A0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "DOXYGEN_PATH=\"/Applications/Doxygen.app/Contents/Resources/doxygen\"\nDOCSET_PATH=\"Documentation\"\n\nif [[ -d $DOXYGEN_PATH ]] ; then\n\n    # Copy configuration file from source to temporary directory\n    cp \"Resources/DoxyFile\" \"$TEMP_DIR/Doxyfile\"\n\n    #  Run doxygen on the copied config file.\n    $DOXYGEN_PATH \"$TEMP_DIR/Doxyfile\"\n\n    #  make will invoke docsetutil. Take a look at the Makefile to see how this is done.\n    make -C \"$DOCSET_PATH\" install\n\nelse\n\n    echo \"warning: Doxygen is not installed, skiping documentation.\"\n\nfi\n\nexit 0";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9829C11130BABCD00C38CCC /* iGenCommon.m in Sources */,
+				E9A30D2C13E802B900AA0617 /* iGenCustomFontLabel.m in Sources */,
+				E9A30D2E13E802B900AA0617 /* iGenGridView.m in Sources */,
+				E9A30D3013E802B900AA0617 /* NSData+iGenLib+B64.m in Sources */,
+				E9A30D3213E802B900AA0617 /* NSArray+GeneralExtensions.m in Sources */,
+				E9A30D3413E802B900AA0617 /* NSBundle+GeneralExtensions.m in Sources */,
+				E9A30D3613E802B900AA0617 /* NSDate+GeneralExtensions.m in Sources */,
+				E9A30D3813E802B900AA0617 /* NSObject+GeneralExtensions.m in Sources */,
+				E9A30D3A13E802B900AA0617 /* NSString+iGenLib.m in Sources */,
+				E9A30D3D13E802B900AA0617 /* UIAlertView+iGenLib.m in Sources */,
+				E9A30D3F13E802B900AA0617 /* UIColor+iGenLib.m in Sources */,
+				E9A30D4113E802B900AA0617 /* UIImage+iGenLib.m in Sources */,
+				E9A30D4313E802B900AA0617 /* UIView+iGenLib.m in Sources */,
+				E9A30D4513E802B900AA0617 /* NSObject+XML+iGenLib.m in Sources */,
+				E9A30D4713E802B900AA0617 /* XMLReader.m in Sources */,
+				E9BEC4EF13EBCCA400EF8222 /* iGenImageScaleController.m in Sources */,
+				E9C45B4A14681639003E0AF1 /* UIScreen+iGenLib.m in Sources */,
+				E9C45B50146817FB003E0AF1 /* UITableView+iGenLib.m in Sources */,
+				E93D85BB1472557D0004CDBB /* NSMutableArray+GeneralExtensions.m in Sources */,
+				E9A065A41713DFEF0048C113 /* NSThread+iGenLib.m in Sources */,
+				E9A065A61713DFEF0048C113 /* NSInvocation+iGenLib.m in Sources */,
+				E96306EC171D2839003B64D8 /* NSObject+MultiObjectExtensions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E9A065AC1713E3630048C113 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9B04207146BB36300D137A0 /* iGenLib Documentation */;
+			targetProxy = E9A065AB1713E3630048C113 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/iGenLib.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = iGenLib_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = iGenLib;
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = /tmp/iGenLib.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = iGenLib_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = iGenLib;
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		E9B04208146BB36300D137A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = "iGenLib Documentation";
+			};
+			name = Debug;
+		};
+		E9B04209146BB36300D137A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				PRODUCT_NAME = "iGenLib Documentation";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "iGenLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "iGenLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9B0420C146BB38D00D137A0 /* Build configuration list for PBXAggregateTarget "iGenLib Documentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9B04208146BB36300D137A0 /* Debug */,
+				E9B04209146BB36300D137A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
