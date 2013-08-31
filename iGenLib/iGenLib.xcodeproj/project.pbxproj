@@ -29,7 +29,7 @@
 		E96306ED171D2839003B64D8 /* NSObject+MultiObjectExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = E96306EB171D2838003B64D8 /* NSObject+MultiObjectExtensions.h */; };
 		E9829BB3130BA50F00C38CCC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9829BB2130BA50F00C38CCC /* CoreGraphics.framework */; };
 		E9829BB9130BA52700C38CCC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9829BB8130BA52700C38CCC /* UIKit.framework */; };
-		E9829C10130BABCD00C38CCC /* iGenCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = E9829C0E130BABCD00C38CCC /* iGenCommon.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E9829C10130BABCD00C38CCC /* iGenCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = E9829C0E130BABCD00C38CCC /* iGenCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E9829C11130BABCD00C38CCC /* iGenCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = E9829C0F130BABCD00C38CCC /* iGenCommon.m */; };
 		E9A065A41713DFEF0048C113 /* NSThread+iGenLib.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A065A01713DFEF0048C113 /* NSThread+iGenLib.m */; };
 		E9A065A51713DFEF0048C113 /* NSThread+iGenLib.h in Headers */ = {isa = PBXBuildFile; fileRef = E9A065A11713DFEF0048C113 /* NSThread+iGenLib.h */; };
@@ -85,7 +85,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AA747D9E0F9514B9006C5449 /* iGenLib_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iGenLib_Prefix.pch; path = "Users/administrator/Documents/Ramki/Development/iGenLib/iGenLib/iGenLib_Prefix.pch"; sourceTree = SDKROOT; };
+		AA747D9E0F9514B9006C5449 /* iGenLib_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iGenLib_Prefix.pch; path = Users/administrator/Documents/Ramki/Development/iGenLib/iGenLib/iGenLib_Prefix.pch; sourceTree = SDKROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libiGenLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libiGenLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E93D85B91472557D0004CDBB /* NSMutableArray+GeneralExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+GeneralExtensions.m"; sourceTree = "<group>"; };

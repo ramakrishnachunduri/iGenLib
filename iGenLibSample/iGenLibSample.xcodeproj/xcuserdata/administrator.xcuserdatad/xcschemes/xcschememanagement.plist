@@ -4,29 +4,17 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>iGenLib Documentation.xcscheme</key>
+		<key>iGenLibSample.xcscheme</key>
 		<dict>
 			<key>isShown</key>
-			<false/>
+			<true/>
 			<key>orderHint</key>
-			<integer>2</integer>
-		</dict>
-		<key>iGenLib.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>0</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>D2AAC07D0554694100DB518D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E9B04207146BB36300D137A0</key>
+		<key>1D6058900D05DD3D006BFB54</key>
 		<dict>
 			<key>primary</key>
 			<true/>
