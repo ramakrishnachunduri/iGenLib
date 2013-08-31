@@ -457,7 +457,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "DOXYGEN_PATH=\"/Applications/Doxygen.app/Contents/Resources/doxygen\"\nDOCSET_PATH=\"Documentation\"\n\nif [[ -d $DOXYGEN_PATH ]] ; then\n\n    # Copy configuration file from source to temporary directory\n    cp \"Resources/DoxyFile\" \"$TEMP_DIR/Doxyfile\"\n\n    #  Run doxygen on the copied config file.\n    $DOXYGEN_PATH \"$TEMP_DIR/Doxyfile\"\n\n    #  make will invoke docsetutil. Take a look at the Makefile to see how this is done.\n    make -C \"$DOCSET_PATH\" install\n\nelse\n\n    echo \"warning: Doxygen is not installed, skiping documentation.\"\n\nfi\n\nexit 0";
+			shellScript = "DOXYGEN_PATH=\"/Applications/Doxygen.app/Contents/Resources/doxygen\"\nDOCSET_PATH=\"Documentation\"\n\nif [[ -f $DOXYGEN_PATH ]] ; then\n\n    # Copy configuration file from source to temporary directory\n    cp \"Resources/DoxyFile\" \"$TEMP_DIR/Doxyfile\"\n\n    #  Run doxygen on the copied config file.\n    $DOXYGEN_PATH \"$TEMP_DIR/Doxyfile\"\n\n    #  make will invoke docsetutil. Take a look at the Makefile to see how this is done.\n    make -C \"$DOCSET_PATH\" install\n\nelse\n\n    echo \"warning: Doxygen is not installed, skiping documentation.\"\n\nfi\n\nexit 0";
 		};
 /* End PBXShellScriptBuildPhase section */
 
