@@ -25,8 +25,6 @@
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 		E93D85BB1472557D0004CDBB /* NSMutableArray+GeneralExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = E93D85B91472557D0004CDBB /* NSMutableArray+GeneralExtensions.m */; };
 		E93D85BC1472557D0004CDBB /* NSMutableArray+GeneralExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = E93D85BA1472557D0004CDBB /* NSMutableArray+GeneralExtensions.h */; };
-		E96306EC171D2839003B64D8 /* NSObject+MultiObjectExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = E96306EA171D2838003B64D8 /* NSObject+MultiObjectExtensions.m */; };
-		E96306ED171D2839003B64D8 /* NSObject+MultiObjectExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = E96306EB171D2838003B64D8 /* NSObject+MultiObjectExtensions.h */; };
 		E9829BB3130BA50F00C38CCC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9829BB2130BA50F00C38CCC /* CoreGraphics.framework */; };
 		E9829BB9130BA52700C38CCC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9829BB8130BA52700C38CCC /* UIKit.framework */; };
 		E9829C10130BABCD00C38CCC /* iGenCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = E9829C0E130BABCD00C38CCC /* iGenCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -90,8 +88,6 @@
 		D2AAC07E0554694100DB518D /* libiGenLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libiGenLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E93D85B91472557D0004CDBB /* NSMutableArray+GeneralExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+GeneralExtensions.m"; sourceTree = "<group>"; };
 		E93D85BA1472557D0004CDBB /* NSMutableArray+GeneralExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+GeneralExtensions.h"; sourceTree = "<group>"; };
-		E96306EA171D2838003B64D8 /* NSObject+MultiObjectExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MultiObjectExtensions.m"; sourceTree = "<group>"; };
-		E96306EB171D2838003B64D8 /* NSObject+MultiObjectExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MultiObjectExtensions.h"; sourceTree = "<group>"; };
 		E96466721699D44B00EE5477 /* doxy_header.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = doxy_header.html; sourceTree = "<group>"; };
 		E96466731699D44B00EE5477 /* doxy_footer.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = doxy_footer.html; sourceTree = "<group>"; };
 		E9829BB2130BA50F00C38CCC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -279,8 +275,6 @@
 				E9A30D1713E802B900AA0617 /* NSDate+GeneralExtensions.m */,
 				E9A30D1813E802B900AA0617 /* NSObject+GeneralExtensions.h */,
 				E9A30D1913E802B900AA0617 /* NSObject+GeneralExtensions.m */,
-				E96306EA171D2838003B64D8 /* NSObject+MultiObjectExtensions.m */,
-				E96306EB171D2838003B64D8 /* NSObject+MultiObjectExtensions.h */,
 				E9A30D1A13E802B900AA0617 /* NSString+iGenLib.h */,
 				E9A30D1B13E802B900AA0617 /* NSString+iGenLib.m */,
 				E9A30D1D13E802B900AA0617 /* UIAlertView+iGenLib.h */,
@@ -380,7 +374,6 @@
 				E93D85BC1472557D0004CDBB /* NSMutableArray+GeneralExtensions.h in Headers */,
 				E9A065A51713DFEF0048C113 /* NSThread+iGenLib.h in Headers */,
 				E9A065A71713DFEF0048C113 /* NSInvocation+iGenLib.h in Headers */,
-				E96306ED171D2839003B64D8 /* NSObject+MultiObjectExtensions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,7 +480,6 @@
 				E93D85BB1472557D0004CDBB /* NSMutableArray+GeneralExtensions.m in Sources */,
 				E9A065A41713DFEF0048C113 /* NSThread+iGenLib.m in Sources */,
 				E9A065A61713DFEF0048C113 /* NSInvocation+iGenLib.m in Sources */,
-				E96306EC171D2839003B64D8 /* NSObject+MultiObjectExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

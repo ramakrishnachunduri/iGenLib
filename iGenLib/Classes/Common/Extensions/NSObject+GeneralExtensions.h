@@ -52,4 +52,6 @@
 
 -(void)performSelector:(SEL)aSelector afterDelay:(NSTimeInterval)delay withObjects:(id)object,... NS_REQUIRES_NIL_TERMINATION;
 
+-(void)performSelector:(SEL)aSelector withValues:(id)value,... NS_REQUIRES_NIL_TERMINATION;
+
 @end

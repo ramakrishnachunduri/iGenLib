@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "iGenSampleBaseVC.h"
 
-@interface MenuViewController : UIViewController <UITableViewDataSource,UITableViewDelegate>
+@interface MenuViewController : iGenSampleBaseVC <UITableViewDataSource,UITableViewDelegate>
 {
 	NSObject *menuItems;
 	IBOutlet UITableView *myTableView;

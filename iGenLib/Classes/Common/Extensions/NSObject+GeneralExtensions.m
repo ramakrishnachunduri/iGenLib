@@ -97,4 +97,15 @@
 	[invocation performSelector:@selector(invoke) withObject:nil afterDelay:delay];
 }
 
+-(void)performSelector:(SEL)aSelector withValues:(id)value,...
+{
+	NSInvocation *invocation;
+	va_list args;
+    va_start(args, value);
+	invocation=[NSInvocation invocationWithSelector:aSelector toTarget:self andArgument:value otherArgs:args];
+	va_end(args);
+	
+	[invocation performSelector:@selector(invoke) withObject:nil];
+}
+
 @end

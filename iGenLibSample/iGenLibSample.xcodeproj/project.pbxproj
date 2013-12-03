@@ -19,6 +19,7 @@
 		C33C31F517D22859002D0147 /* iGenXMLVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C33C31F317D22859002D0147 /* iGenXMLVC.xib */; };
 		C33C31F817D2286C002D0147 /* iGenSampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C33C31F717D2286C002D0147 /* iGenSampleAppDelegate.m */; };
 		C33C31FD17D22A42002D0147 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C33C31FC17D22A42002D0147 /* Default-568h@2x.png */; };
+		C3528365184E0AE600F9730F /* iGenSampleBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C3528363184E0AE600F9730F /* iGenSampleBaseVC.m */; };
 		E939377B161BFDC4008EC604 /* Main_Menu.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9393779161BFDC4008EC604 /* Main_Menu.plist */; };
 		E939377C161BFDC4008EC604 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E939377A161BFDC4008EC604 /* icon.png */; };
 		E97B44B4135FEED700AF3618 /* MoveAndScaleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E97B44B0135FEED700AF3618 /* MoveAndScaleVC.m */; };
@@ -66,6 +67,8 @@
 		C33C31F917D2287C002D0147 /* iGenLibSample_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iGenLibSample_Prefix.pch; sourceTree = "<group>"; };
 		C33C31FA17D22889002D0147 /* iGenLibSample-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "iGenLibSample-Info.plist"; sourceTree = "<group>"; };
 		C33C31FC17D22A42002D0147 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		C3528363184E0AE600F9730F /* iGenSampleBaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iGenSampleBaseVC.m; sourceTree = "<group>"; };
+		C3528364184E0AE600F9730F /* iGenSampleBaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iGenSampleBaseVC.h; sourceTree = "<group>"; };
 		C3619D5817D2271000168434 /* iGenLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = iGenLib.xcodeproj; path = ../iGenLib/iGenLib.xcodeproj; sourceTree = "<group>"; };
 		E9393779161BFDC4008EC604 /* Main_Menu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Main_Menu.plist; path = Resources/Main_Menu.plist; sourceTree = "<group>"; };
 		E939377A161BFDC4008EC604 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = Resources/icon.png; sourceTree = "<group>"; };
@@ -100,6 +103,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C3528363184E0AE600F9730F /* iGenSampleBaseVC.m */,
+				C3528364184E0AE600F9730F /* iGenSampleBaseVC.h */,
 				C33C31F617D2286C002D0147 /* iGenSampleAppDelegate.h */,
 				C33C31F717D2286C002D0147 /* iGenSampleAppDelegate.m */,
 				28C286DF0D94DF7D0034E888 /* MenuViewController.h */,
@@ -304,6 +309,7 @@
 				E98AD2AA135F0AE600F0C6C4 /* GridViewViewController.m in Sources */,
 				E97B44B4135FEED700AF3618 /* MoveAndScaleVC.m in Sources */,
 				C33C31F417D22859002D0147 /* iGenXMLVC.m in Sources */,
+				C3528365184E0AE600F9730F /* iGenSampleBaseVC.m in Sources */,
 				C33C31F817D2286C002D0147 /* iGenSampleAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,7 +8,10 @@
 #import <UIKit/UIKit.h>
 #import "iGenCommon.h"
 #import <iGenGridView.h>
-@interface GridViewViewController : UIViewController <iGenGridViewDelegate>
+
+#import "iGenSampleBaseVC.h"
+
+@interface GridViewViewController : iGenSampleBaseVC <iGenGridViewDelegate>
 {
 	NSMutableArray *titles;
 	NSMutableArray *images;

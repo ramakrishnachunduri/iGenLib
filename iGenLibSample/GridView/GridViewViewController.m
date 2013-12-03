@@ -58,16 +58,23 @@
 	}
 	
 	self.view.backgroundColor=[UIColor lightGrayColor];
+	
+	[super viewDidLoad];
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
 	gridView=[[iGenGridView alloc] initWithDelegate:self];
-	[gridView setFrame:self.view.frame];
+	
+	CGRect frm=self.view.frame;
+	frm.origin.y=0;
+	[gridView setFrame:frm];
 	gridView.pagingEnabled=self.isPagingEnabled;
 	gridView.backgroundColor=[UIColor lightGrayColor];
 	[self.view addSubview:gridView];
 	[gridView reloadData];
+	
+	[super viewDidAppear:animated];
 }
 
 -(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
