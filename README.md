@@ -5,7 +5,7 @@ iGenLib - An IOS(Iphone &amp; Ipad) library with Generic Extensions and Componen
 
 (Just a wrapper library to hold all the re-usable code in the projects we worked with)
 
-Documentation available at http://www.codeworth.com/c_w_files/riplib-documentation/
+Documentation available at http://www.codeworth.com/c_w_files/iGenLibDoc
 
 List of Components
 - GridView
