@@ -88,8 +88,6 @@
 		D2AAC07E0554694100DB518D /* libiGenLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libiGenLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E93D85B91472557D0004CDBB /* NSMutableArray+GeneralExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+GeneralExtensions.m"; sourceTree = "<group>"; };
 		E93D85BA1472557D0004CDBB /* NSMutableArray+GeneralExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+GeneralExtensions.h"; sourceTree = "<group>"; };
-		E96466721699D44B00EE5477 /* doxy_header.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = doxy_header.html; sourceTree = "<group>"; };
-		E96466731699D44B00EE5477 /* doxy_footer.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = doxy_footer.html; sourceTree = "<group>"; };
 		E9829BB2130BA50F00C38CCC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		E9829BB8130BA52700C38CCC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E9829C0E130BABCD00C38CCC /* iGenCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iGenCommon.h; sourceTree = "<group>"; };
@@ -135,7 +133,6 @@
 		E9C45B4914681639003E0AF1 /* UIScreen+iGenLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+iGenLib.h"; sourceTree = "<group>"; };
 		E9C45B4E146817FB003E0AF1 /* UITableView+iGenLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+iGenLib.m"; sourceTree = "<group>"; };
 		E9C45B4F146817FB003E0AF1 /* UITableView+iGenLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+iGenLib.h"; sourceTree = "<group>"; };
-		E9EC99D816B13D13009E9DFC /* DoxyFile */ = {isa = PBXFileReference; lastKnownFileType = text; path = DoxyFile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,7 +160,6 @@
 		0867D691FE84028FC02AAC07 /* iGenLib */ = {
 			isa = PBXGroup;
 			children = (
-				E91D7D761696DD1B0090C035 /* Resources */,
 				08FB77AEFE84172EC02AAC07 /* Classes */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
@@ -199,16 +195,6 @@
 				AA747D9E0F9514B9006C5449 /* iGenLib_Prefix.pch */,
 			);
 			name = "Other Sources";
-			sourceTree = "<group>";
-		};
-		E91D7D761696DD1B0090C035 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				E9EC99D816B13D13009E9DFC /* DoxyFile */,
-				E96466721699D44B00EE5477 /* doxy_header.html */,
-				E96466731699D44B00EE5477 /* doxy_footer.html */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		E9A30D0513E802B800AA0617 /* UI */ = {
@@ -450,7 +436,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "DOXYGEN_PATH=\"/Applications/Doxygen.app/Contents/Resources/doxygen\"\nDOCSET_PATH=\"Documentation\"\n\nif [[ -f $DOXYGEN_PATH ]] ; then\n\n    # Copy configuration file from source to temporary directory\n    cp \"Resources/DoxyFile\" \"$TEMP_DIR/Doxyfile\"\n\n    #  Run doxygen on the copied config file.\n    $DOXYGEN_PATH \"$TEMP_DIR/Doxyfile\"\n\n    #  make will invoke docsetutil. Take a look at the Makefile to see how this is done.\n    make -C \"$DOCSET_PATH\" install\n\nelse\n\n    echo \"warning: Doxygen is not installed, skiping documentation.\"\n\nfi\n\nexit 0";
+			shellScript = "DOXYGEN_PATH=\"/Applications/Doxygen.app/Contents/Resources/doxygen\"\nDOCSET_PATH=\"Documentation/Output/\"\n\nif [[ -f $DOXYGEN_PATH ]] ; then\n\n# Copy configuration file from source to temporary directory\ncp \"Documentation/Resources/DoxyFile\" \"$TEMP_DIR/Doxyfile\"\n\n#  Run doxygen on the copied config file.\n$DOXYGEN_PATH \"$TEMP_DIR/Doxyfile\"\n\n#  make will invoke docsetutil. Take a look at the Makefile to see how this is done.\nmake -C \"$DOCSET_PATH\" install\n\nelse\n\necho \"warning: Doxygen is not installed, skiping documentation.\"\n\nfi\n\nexit 0";
 		};
 /* End PBXShellScriptBuildPhase section */
 
