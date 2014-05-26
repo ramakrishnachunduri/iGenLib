@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040CB8AE1933180E00FF89F2 /* libiGenLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 040CB8AB1933180400FF89F2 /* libiGenLib.a */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
@@ -14,7 +15,6 @@
 		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
 		28C286E10D94DF7D0034E888 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* MenuViewController.m */; };
 		28F335F11007B36200424DE2 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28F335F01007B36200424DE2 /* MenuViewController.xib */; };
-		C3285A1117D22D6600FCCF2B /* libiGenLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C3619D5E17D2271100168434 /* libiGenLib.a */; };
 		C33C31F417D22859002D0147 /* iGenXMLVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C33C31F217D22859002D0147 /* iGenXMLVC.m */; };
 		C33C31F517D22859002D0147 /* iGenXMLVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C33C31F317D22859002D0147 /* iGenXMLVC.xib */; };
 		C33C31F817D2286C002D0147 /* iGenSampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C33C31F717D2286C002D0147 /* iGenSampleAppDelegate.m */; };
@@ -33,14 +33,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C3619D5D17D2271100168434 /* PBXContainerItemProxy */ = {
+		040CB8AA1933180400FF89F2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C3619D5817D2271000168434 /* iGenLib.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = D2AAC07E0554694100DB518D;
 			remoteInfo = iGenLib;
 		};
-		C3619D5F17D2273000168434 /* PBXContainerItemProxy */ = {
+		040CB8AC1933180800FF89F2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C3619D5817D2271000168434 /* iGenLib.xcodeproj */;
 			proxyType = 1;
@@ -69,7 +69,7 @@
 		C33C31FC17D22A42002D0147 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		C3528363184E0AE600F9730F /* iGenSampleBaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iGenSampleBaseVC.m; sourceTree = "<group>"; };
 		C3528364184E0AE600F9730F /* iGenSampleBaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iGenSampleBaseVC.h; sourceTree = "<group>"; };
-		C3619D5817D2271000168434 /* iGenLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = iGenLib.xcodeproj; path = ../iGenLib/iGenLib.xcodeproj; sourceTree = "<group>"; };
+		C3619D5817D2271000168434 /* iGenLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = iGenLib.xcodeproj; path = ../iGenLib/SRC/iGenLib.xcodeproj; sourceTree = "<group>"; };
 		E9393779161BFDC4008EC604 /* Main_Menu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Main_Menu.plist; path = Resources/Main_Menu.plist; sourceTree = "<group>"; };
 		E939377A161BFDC4008EC604 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = Resources/icon.png; sourceTree = "<group>"; };
 		E97B44AF135FEED700AF3618 /* MoveAndScaleVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoveAndScaleVC.h; sourceTree = "<group>"; };
@@ -90,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3285A1117D22D6600FCCF2B /* libiGenLib.a in Frameworks */,
+				040CB8AE1933180E00FF89F2 /* libiGenLib.a in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */,
@@ -100,6 +100,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		040CB8A61933180400FF89F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				040CB8AB1933180400FF89F2 /* libiGenLib.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,14 +177,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C3619D5917D2271000168434 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C3619D5E17D2271100168434 /* libiGenLib.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		E97B44AC135FEED700AF3618 /* MoveAndScaleImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,7 +226,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				C3619D6017D2273000168434 /* PBXTargetDependency */,
+				040CB8AD1933180800FF89F2 /* PBXTargetDependency */,
 			);
 			name = iGenLibSample;
 			productName = RIPSample;
@@ -256,7 +256,7 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = C3619D5917D2271000168434 /* Products */;
+					ProductGroup = 040CB8A61933180400FF89F2 /* Products */;
 					ProjectRef = C3619D5817D2271000168434 /* iGenLib.xcodeproj */;
 				},
 			);
@@ -268,11 +268,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		C3619D5E17D2271100168434 /* libiGenLib.a */ = {
+		040CB8AB1933180400FF89F2 /* libiGenLib.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libiGenLib.a;
-			remoteRef = C3619D5D17D2271100168434 /* PBXContainerItemProxy */;
+			remoteRef = 040CB8AA1933180400FF89F2 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -317,10 +317,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C3619D6017D2273000168434 /* PBXTargetDependency */ = {
+		040CB8AD1933180800FF89F2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = iGenLib;
-			targetProxy = C3619D5F17D2273000168434 /* PBXContainerItemProxy */;
+			targetProxy = 040CB8AC1933180800FF89F2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
