@@ -2,8 +2,12 @@ iGenLib
 =======
 
 iGenLib - An IOS(Iphone &amp; Ipad) library with Generic Extensions and Components
-
 (Just a wrapper library to hold all the re-usable code in the projects we worked with)
+
+iGenLib is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation at http://www.gnu.org/licenses/, either version 3 of the License, or
+(at your option) any later version. 
 
 Documentation available at http://www.codeworth.com/c_w_files/iGenLibDoc
 
