@@ -23,20 +23,39 @@
 #import <UIKit/UIKit.h>
 @interface UIView (iGenLib)
 /**
- * iterates through all the subviews and finds the active first responder
- * @return if found first responder or a nil
+ *  iterate all subviews in reciever view and finds the current first responder
+ *  When your view has multiple textfields and wanted to dismiss keyboard without being aware of which field is being edited by user.
+ *  @return a UIView or subclass of UIView which is currently being first responder
  */
 - (UIView *)findFirstResponder;
 
 /**
- * Recursively looks for subviews in a view
- * @return array with all the subviews in the view
+ *  Calculate the height of text content about to be placed in UI.
+ *  @param content       content to calculate height for
+ *  @param contentWidth  desired width for the content (screenwidth in most cases)
+ *  @param minimumHeight minimum height incase if text is too small to display in.
+ *  @param font          desired font to use in UI to fin
+ *
+ *  @return calculated height to place content in
+ */
++(CGFloat)heightForContent:(NSString *)content inWidth:(CGFloat)contentWidth minimumHeight:(CGFloat)minimumHeight withFont:(UIFont*)font;
+
+/**
+ *  Iterate all subviews recursively in reciever view and returns array
+ *	This is different from subviews array as it returns only views in sub-hierarchy but not nested heirarchies.
+ *
+ *  @return Array of views
  */
 - (NSMutableArray*)allSubViews;
 
 /**
- * Takes an image from view kind of taking screenshot but only a particular view
- * @return image with view drawn in it
+ *	Convert view to image
  */
 - (UIImage*)toImage;
+
+/**
+ * Draws view in current context.
+ * Ex : draw view in PDF,Graph and sometimes over another image
+ */
+-(void)drawInCurrentGraphicsContext;
 @end

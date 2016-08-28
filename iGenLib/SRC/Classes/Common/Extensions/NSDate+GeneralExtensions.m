@@ -69,4 +69,115 @@
     return returnVal;
 }
 
++(NSDate*)firstDayInMonth:(NSInteger)mnth year:(NSInteger)yr
+{
+	NSCalendarUnit unit=NSCalendarUnitYear | NSMonthCalendarUnit | NSDayCalendarUnit;
+	
+	NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+	NSDateComponents *components = [gregorian components:unit fromDate:[NSDate date]];
+	[components setYear:yr];
+	[components setMonth:mnth];
+	[components setDay:1];
+	[components setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"GMT"]];
+	NSDate *firstDate=[gregorian dateFromComponents:components];
+	return firstDate;
+}
+
++(NSDate*)lastDayInMonth:(NSInteger)mnth year:(NSInteger)yr
+{
+	NSCalendarUnit unit=NSCalendarUnitYear | NSMonthCalendarUnit | NSDayCalendarUnit;
+	
+	NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+	NSDateComponents *components = [gregorian components:unit fromDate:[NSDate date]];
+	[components setYear:yr];
+	[components setMonth:mnth];
+	[components setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"GMT"]];
+	
+	//last date
+	NSInteger dayVal=31;
+	for(int i=0;i<5;i++)
+	{
+		[components setDay:dayVal];
+		NSDate *day=[gregorian dateFromComponents:components];
+		NSDateComponents *comps = [gregorian components:unit fromDate:day];
+		if(comps.month==mnth)
+		{
+			return day;
+		}
+		dayVal--;
+	}
+	return nil;
+}
+
++(NSDate*)firstDayInMonthWithDate:(NSDate *)date
+{
+	NSCalendarUnit unit=NSCalendarUnitYear | NSMonthCalendarUnit | NSDayCalendarUnit;
+	NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+	NSDateComponents *comps=[gregorian components:unit fromDate:date];
+	return [NSDate firstDayInMonth:comps.month year:comps.year];
+}
+
++(NSDate*)lastDayInMonthWithDate:(NSDate *)date
+{
+	NSCalendarUnit unit=NSCalendarUnitYear | NSMonthCalendarUnit | NSDayCalendarUnit;
+	
+	NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+	NSDateComponents *comps=[gregorian components:unit fromDate:date];
+	return [NSDate lastDayInMonth:comps.month year:comps.year];
+}
+
++(NSDate*)firstDayInCurrentMonth
+{
+	return [NSDate firstDayInMonthWithDate:[NSDate date]];
+}
+
++(NSDate*)lastDayInCurrentMonth
+{
+	return [NSDate lastDayInMonthWithDate:[NSDate date]];
+}
+
++(NSDate*)firstDayInWeekWithDate:(NSDate *)date
+{
+	NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+	NSDateComponents *weekdayComponents = [gregorian components:NSWeekdayCalendarUnit fromDate:date];
+	NSDateComponents *componentsToSubtract = [[NSDateComponents alloc] init];
+	[componentsToSubtract setDay: - ((([weekdayComponents weekday] - [gregorian firstWeekday])
+									  + 7 ) % 7)];
+	NSDate *beginningOfWeek = [gregorian dateByAddingComponents:componentsToSubtract toDate:date options:0];
+	NSDateComponents *components = [gregorian components: (NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit)
+												fromDate: beginningOfWeek];
+	beginningOfWeek = [gregorian dateFromComponents: components];
+	beginningOfWeek=[beginningOfWeek dateByAddingTimeInterval:24*60*60];
+	return beginningOfWeek;
+}
+
++(NSDate*)lastDayInWeekWithDate:(NSDate *)date
+{
+	NSDate *datex=[NSDate firstDayInWeekWithDate:date];
+	datex=[datex dateByAddingTimeInterval:(24*60*60)*6];
+	return datex;
+}
+
++(NSDate*)firstDayInCurrentWeek
+{
+	return [NSDate firstDayInWeekWithDate:[NSDate date]];
+}
+
++(NSDate*)lastDayInCurrentWeek
+{
+	return [NSDate lastDayInWeekWithDate:[NSDate date]];
+}
+
++(int)daysCountInMonth:(NSDate*)date
+{
+	NSCalendar *c = [NSCalendar currentCalendar];
+	NSRange days = [c rangeOfUnit:NSDayCalendarUnit inUnit:NSMonthCalendarUnit forDate:date];
+	return (int)days.length;
+}
+
++(int)daysCountInCurrentMonth
+{
+	return [NSDate daysCountInMonth:[NSDate date]];
+}
+
 @end

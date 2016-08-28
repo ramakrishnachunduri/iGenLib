@@ -49,4 +49,81 @@
  */
 +(int) differenceBetweenDates:(NSDate*)fromDate ToDate:(NSDate*)toDate withCalenderUnit:(NSCalendarUnit*)calenderUnit;
 
+/**
+ * Date of the first date in a month
+ * @param mnth : month number in which first day is needed.
+ * @param yr : year number  in which first day is needed of passed month.
+ * @return date object for first date in month
+ */
++(NSDate*)firstDayInMonth:(NSInteger)mnth year:(NSInteger)yr;
+
+/**
+ * Date of the last date in a month
+ * @param mnth : month number in which last day is needed.
+ * @param yr : year number  in which first day is needed of passed month.
+ * @return date object for last date in month could be 28,29,30 or 31
+ */
++(NSDate*)lastDayInMonth:(NSInteger)mnth year:(NSInteger)yr;
+
+/**
+ * Date of the first date in a month
+ * @param date : any random date in the same month
+ * @return date object for first date in month
+ */
++(NSDate*)firstDayInMonthWithDate:(NSDate *)date;
+
+/**
+ * Date of the last date in a month
+ * @param date : any random date in the same month
+ * @return date object for last date in month could be 28,29,30 or 31
+ */
++(NSDate*)lastDayInMonthWithDate:(NSDate *)date;
+
+/**
+ * Date of the last date in current month
+ */
++(NSDate*)firstDayInCurrentMonth;
+
+/**
+ * Date of the last date in current month
+ */
++(NSDate*)lastDayInCurrentMonth;
+
+/**
+ * Date of the first date in a week
+ * @param date : any random date in the same week
+ * @return date object for first date in week
+ */
++(NSDate*)firstDayInWeekWithDate:(NSDate *)date;
+
+/**
+ * Date of the last date in a week
+ * @param date : any random date in the same week
+ * @return date object for last date in week
+ */
++(NSDate*)lastDayInWeekWithDate:(NSDate *)date;
+
+/**
+ * Date of the first date in current week
+ */
++(NSDate*)firstDayInCurrentWeek;
+
+/**
+ * Date of the last date in current week
+ */
++(NSDate*)lastDayInCurrentWeek;
+
+/**
+ * Count the days in the month
+ * @param date : any random date in the same month
+ * @return count of days in month could be 28,29,30 or 31
+ */
++(int)daysCountInMonth:(NSDate*)date;
+
+/**
+ * Count the days in current month
+ * @return count of days in currentmonth could be 28,29,30 or 31
+ */
++(int)daysCountInCurrentMonth;
+
 @end

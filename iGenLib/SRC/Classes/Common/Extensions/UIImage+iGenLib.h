@@ -24,6 +24,40 @@
 @interface UIImage (iGenLib)
 
 /**
+ *  Rotates and draws the reciever image resulting in new image
+ *
+ *  @param degrees degrees with which rotation to be done
+ *  @return a new image instance where reciever image is rotated
+ */
+- (UIImage *)imageRotatedByDegrees:(CGFloat)degrees;
+
+/**
+ *  Creates a resizable image with prefered color. Can be used in following scenarios
+ *  - UIButton doesn't allow to set different colors in different states but different background images in different states, so a resizable color image can be setted.
+ *
+ *  @param color Color to render the image with
+ *  @return a resizable image rendered using passed color and generated image is returned.
+ */
++ (UIImage *)resizableImageWithColor:(UIColor *)color;
+
+/**
+ *  Creates a resizable image with prefered color. Can be used in following scenarios
+ *  - UIButton doesn't allow to set different colors in different states but different background images in different states, so a resizable color image can be setted.
+ *
+ *  @param color Color to render the image with
+ *  @param radius corner radius for rounder corners to be rendered
+ *  @return a resizable image rendered using passed color and corner radius and generated image is returned.
+ */
++ (UIImage *)resizableRoundedCornerImageWithColor:(UIColor *)color andRadius:(CGFloat)radius;
+
+/**
+ *  Creates an image with new size while stricting to the same aspect ratio as original one.
+ *  @param width desired width the image to scale(/shrink) to.
+ *  @return new image which is scaled to desired width
+ */
+-(UIImage*)imageByScalingProportionallyToWidth:(CGFloat)width;
+
+/**
  * Scales the image to specified size
  * @param sizeToScale : size the image have to be scaled
  * @param isStrech : specify whether the image have to be streched to size.

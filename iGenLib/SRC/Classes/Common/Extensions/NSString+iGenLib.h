@@ -51,6 +51,13 @@
  */
 -(BOOL)isEmptyString;
 
+/**
+ *  Replaces occurences of keys with objects - a helper for replacing multiple instances a time
+ *  @param dictionary a dictionary with keys which would be replaced by objects
+ *  @return resultant string
+ */
+-(NSString*)replaceOccurencesOfKeysWithObjects:(NSDictionary*)dictionary;
+
 #pragma mark -
 #pragma mark String Format methods
 
@@ -91,6 +98,15 @@
  * @remarks please do not assign the returned string to the reciever object's referece because the actual password might be needed further when authenticating.
  */
 -(NSString *)stringByAddingSpaces:(NSInteger)wordlength;
+
+/**
+ * Converts a single lined string to a multi lines paragraph html.
+ * @param linelength : length of each line in the generated paragraph.
+ * @return a new (autoreleased) String instance with multiple lines
+ * @remarks Only for view purpose to prevent missing of characters to user while reading.
+ * @remarks The paragraph generated doesn't have word wraping and hence a single word might be displayed in 2 lines.
+ */
+-(NSString *)stringByAddingHTMLBreaks:(NSInteger)linelength;
 
 #pragma mark -
 #pragma mark String Conversion Methods
@@ -138,6 +154,13 @@
  * @return a new (autoreleased) string that has the localized string correspondent to reciever string
  */
 -(NSInteger)numberOfLinesInString;
+
+/**
+ *  compares reciever against another version number
+ *  @param otherVersion version number to compare against , previous or future
+ *  @return results higher,lower or equal
+ */
+-(NSComparisonResult)compareVersionWith:(NSString *)otherVersion;
 
 #pragma mark -
 @end
