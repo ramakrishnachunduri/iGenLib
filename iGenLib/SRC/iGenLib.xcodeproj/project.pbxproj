@@ -70,6 +70,8 @@
 		E9C45B4B14681639003E0AF1 /* UIScreen+iGenLib.h in Headers */ = {isa = PBXBuildFile; fileRef = E9C45B4914681639003E0AF1 /* UIScreen+iGenLib.h */; };
 		E9C45B50146817FB003E0AF1 /* UITableView+iGenLib.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C45B4E146817FB003E0AF1 /* UITableView+iGenLib.m */; };
 		E9C45B51146817FB003E0AF1 /* UITableView+iGenLib.h in Headers */ = {isa = PBXBuildFile; fileRef = E9C45B4F146817FB003E0AF1 /* UITableView+iGenLib.h */; };
+		FE671B421D6B5466004A4FEF /* iGenTools.h in Headers */ = {isa = PBXBuildFile; fileRef = FE671B401D6B5466004A4FEF /* iGenTools.h */; };
+		FE671B431D6B5466004A4FEF /* iGenTools.m in Sources */ = {isa = PBXBuildFile; fileRef = FE671B411D6B5466004A4FEF /* iGenTools.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +135,8 @@
 		E9C45B4914681639003E0AF1 /* UIScreen+iGenLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+iGenLib.h"; sourceTree = "<group>"; };
 		E9C45B4E146817FB003E0AF1 /* UITableView+iGenLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+iGenLib.m"; sourceTree = "<group>"; };
 		E9C45B4F146817FB003E0AF1 /* UITableView+iGenLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+iGenLib.h"; sourceTree = "<group>"; };
+		FE671B401D6B5466004A4FEF /* iGenTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iGenTools.h; sourceTree = "<group>"; };
+		FE671B411D6B5466004A4FEF /* iGenTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iGenTools.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -306,6 +310,8 @@
 		E9A30D2A13E802B900AA0617 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				FE671B401D6B5466004A4FEF /* iGenTools.h */,
+				FE671B411D6B5466004A4FEF /* iGenTools.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -356,6 +362,7 @@
 				E9BEC4F013EBCCA400EF8222 /* iGenImageScaleController.h in Headers */,
 				E9BEC50913EBCD5D00EF8222 /* iGenImageScaleControllerDelegate.h in Headers */,
 				E9C45B4B14681639003E0AF1 /* UIScreen+iGenLib.h in Headers */,
+				FE671B421D6B5466004A4FEF /* iGenTools.h in Headers */,
 				E9C45B51146817FB003E0AF1 /* UITableView+iGenLib.h in Headers */,
 				E93D85BC1472557D0004CDBB /* NSMutableArray+GeneralExtensions.h in Headers */,
 				E9A065A51713DFEF0048C113 /* NSThread+iGenLib.h in Headers */,
@@ -463,6 +470,7 @@
 				E9BEC4EF13EBCCA400EF8222 /* iGenImageScaleController.m in Sources */,
 				E9C45B4A14681639003E0AF1 /* UIScreen+iGenLib.m in Sources */,
 				E9C45B50146817FB003E0AF1 /* UITableView+iGenLib.m in Sources */,
+				FE671B431D6B5466004A4FEF /* iGenTools.m in Sources */,
 				E93D85BB1472557D0004CDBB /* NSMutableArray+GeneralExtensions.m in Sources */,
 				E9A065A41713DFEF0048C113 /* NSThread+iGenLib.m in Sources */,
 				E9A065A61713DFEF0048C113 /* NSInvocation+iGenLib.m in Sources */,
@@ -484,7 +492,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/iGenLib.dst;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -501,7 +509,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				DSTROOT = /tmp/iGenLib.dst;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -541,6 +549,7 @@
 		E9B04208146BB36300D137A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -551,6 +560,7 @@
 		E9B04209146BB36300D137A0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				PRODUCT_NAME = "iGenLib Documentation";
