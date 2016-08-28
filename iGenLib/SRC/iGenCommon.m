@@ -10,18 +10,6 @@
 
 @implementation iGenCommon
 
-+ (float)ScreenWidth
-{
-	//Returns current Screen width - Used for rendering 'Resolution Independent' views
-	return [[UIScreen mainScreen] applicationFrame].size.width;
-}
-
-+ (float)ScreenHeight
-{
-	//Returns current Screen height - Used for rendering 'Resolution Independent' views
-	return [[UIScreen mainScreen] applicationFrame].size.height;
-}
-
 +(NSData *)getWebData:(NSString *)urlString
 {
 	urlString = [urlString	stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]; 

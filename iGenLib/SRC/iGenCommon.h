@@ -17,7 +17,5 @@
 @interface iGenCommon : NSObject 
 {
 }
-+ (float)ScreenHeight;
-+ (float)ScreenWidth;
 +(NSData *)getWebData:(NSString *)urlString;
 @end
