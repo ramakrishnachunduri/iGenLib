@@ -4,8 +4,7 @@
 
 /*!
  * \brief		iGenDropDownList.h
- * \details		A subclass of UIView that lets you mimic conventional dropdown list instead of using ActionSheet in iPhone and PopOver in iPad\n
- *\n \n
+ * \details		A subclass of UIView that lets you mimic conventional dropdown list instead of using ActionSheet in iPhone and PopOver in iPad\n \n
  * 	This file is part of iGenLib. iGenLib is comprehensive library that provide a common way to integrate and reuse the components across other iOS apps
  * \author		Rama Krishna Chunduri
  * \date		24th December 2014
