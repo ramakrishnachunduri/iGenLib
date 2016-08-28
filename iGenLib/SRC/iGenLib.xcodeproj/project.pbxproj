@@ -72,6 +72,10 @@
 		E9C45B51146817FB003E0AF1 /* UITableView+iGenLib.h in Headers */ = {isa = PBXBuildFile; fileRef = E9C45B4F146817FB003E0AF1 /* UITableView+iGenLib.h */; };
 		FE671B421D6B5466004A4FEF /* iGenTools.h in Headers */ = {isa = PBXBuildFile; fileRef = FE671B401D6B5466004A4FEF /* iGenTools.h */; };
 		FE671B431D6B5466004A4FEF /* iGenTools.m in Sources */ = {isa = PBXBuildFile; fileRef = FE671B411D6B5466004A4FEF /* iGenTools.m */; };
+		FEF9F6191D7362AA00440BE7 /* iGenPaddedLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = FEF9F6151D7362AA00440BE7 /* iGenPaddedLabel.h */; };
+		FEF9F61A1D7362AA00440BE7 /* iGenPaddedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF9F6161D7362AA00440BE7 /* iGenPaddedLabel.m */; };
+		FEF9F61B1D7362AA00440BE7 /* iGenPaddedTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = FEF9F6171D7362AA00440BE7 /* iGenPaddedTextField.h */; };
+		FEF9F61C1D7362AA00440BE7 /* iGenPaddedTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF9F6181D7362AA00440BE7 /* iGenPaddedTextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +141,10 @@
 		E9C45B4F146817FB003E0AF1 /* UITableView+iGenLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+iGenLib.h"; sourceTree = "<group>"; };
 		FE671B401D6B5466004A4FEF /* iGenTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iGenTools.h; sourceTree = "<group>"; };
 		FE671B411D6B5466004A4FEF /* iGenTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iGenTools.m; sourceTree = "<group>"; };
+		FEF9F6151D7362AA00440BE7 /* iGenPaddedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iGenPaddedLabel.h; sourceTree = "<group>"; };
+		FEF9F6161D7362AA00440BE7 /* iGenPaddedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iGenPaddedLabel.m; sourceTree = "<group>"; };
+		FEF9F6171D7362AA00440BE7 /* iGenPaddedTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iGenPaddedTextField.h; sourceTree = "<group>"; };
+		FEF9F6181D7362AA00440BE7 /* iGenPaddedTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iGenPaddedTextField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +222,7 @@
 		E9A30D0613E802B900AA0617 /* Controls */ = {
 			isa = PBXGroup;
 			children = (
+				FEF9F6141D7362AA00440BE7 /* PaddedElements */,
 				E9A30D0A13E802B900AA0617 /* GridView */,
 				E9A30D0713E802B900AA0617 /* CustomFontLabel */,
 			);
@@ -334,6 +343,17 @@
 			path = "Move & Scale";
 			sourceTree = "<group>";
 		};
+		FEF9F6141D7362AA00440BE7 /* PaddedElements */ = {
+			isa = PBXGroup;
+			children = (
+				FEF9F6151D7362AA00440BE7 /* iGenPaddedLabel.h */,
+				FEF9F6161D7362AA00440BE7 /* iGenPaddedLabel.m */,
+				FEF9F6171D7362AA00440BE7 /* iGenPaddedTextField.h */,
+				FEF9F6181D7362AA00440BE7 /* iGenPaddedTextField.m */,
+			);
+			path = PaddedElements;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -342,6 +362,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA747D9F0F9514B9006C5449 /* iGenLib_Prefix.pch in Headers */,
+				FEF9F61B1D7362AA00440BE7 /* iGenPaddedTextField.h in Headers */,
 				E9829C10130BABCD00C38CCC /* iGenCommon.h in Headers */,
 				E9A30D2B13E802B900AA0617 /* iGenCustomFontLabel.h in Headers */,
 				E9A30D2D13E802B900AA0617 /* iGenGridView.h in Headers */,
@@ -366,6 +387,7 @@
 				E9C45B51146817FB003E0AF1 /* UITableView+iGenLib.h in Headers */,
 				E93D85BC1472557D0004CDBB /* NSMutableArray+GeneralExtensions.h in Headers */,
 				E9A065A51713DFEF0048C113 /* NSThread+iGenLib.h in Headers */,
+				FEF9F6191D7362AA00440BE7 /* iGenPaddedLabel.h in Headers */,
 				E9A065A71713DFEF0048C113 /* NSInvocation+iGenLib.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -458,6 +480,7 @@
 				E9A30D3013E802B900AA0617 /* NSData+iGenLib+B64.m in Sources */,
 				E9A30D3213E802B900AA0617 /* NSArray+GeneralExtensions.m in Sources */,
 				E9A30D3413E802B900AA0617 /* NSBundle+GeneralExtensions.m in Sources */,
+				FEF9F61C1D7362AA00440BE7 /* iGenPaddedTextField.m in Sources */,
 				E9A30D3613E802B900AA0617 /* NSDate+GeneralExtensions.m in Sources */,
 				E9A30D3813E802B900AA0617 /* NSObject+GeneralExtensions.m in Sources */,
 				E9A30D3A13E802B900AA0617 /* NSString+iGenLib.m in Sources */,
@@ -466,6 +489,7 @@
 				E9A30D4113E802B900AA0617 /* UIImage+iGenLib.m in Sources */,
 				E9A30D4313E802B900AA0617 /* UIView+iGenLib.m in Sources */,
 				E9A30D4513E802B900AA0617 /* NSObject+XML+iGenLib.m in Sources */,
+				FEF9F61A1D7362AA00440BE7 /* iGenPaddedLabel.m in Sources */,
 				E9A30D4713E802B900AA0617 /* XMLReader.m in Sources */,
 				E9BEC4EF13EBCCA400EF8222 /* iGenImageScaleController.m in Sources */,
 				E9C45B4A14681639003E0AF1 /* UIScreen+iGenLib.m in Sources */,
