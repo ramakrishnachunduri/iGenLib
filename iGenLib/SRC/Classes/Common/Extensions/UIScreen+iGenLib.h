@@ -24,12 +24,12 @@
 #import <QuartzCore/QuartzCore.h>
 @interface UIScreen (iGenLib)
 
-/*
+/**
  * get current screen size in pixel ( that will NOT handle retina size )
  */
 + (CGSize) getScreenSizeInPixel;
 
-/*
+/**
  * get current device window size in pixel ( that will handle retina size )
  */
 + (CGSize) getDeviceWindowSizeInPixel;

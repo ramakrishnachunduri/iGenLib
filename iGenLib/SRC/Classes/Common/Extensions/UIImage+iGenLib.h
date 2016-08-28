@@ -33,12 +33,12 @@
  */
 - (UIImage *)scaleToSize:(CGSize)sizeToScale strech:(BOOL)isStrech;
 
-/*
+/**
  *To find whether land scape image or portrait
  */
 -(BOOL)isLandScape;
 
-/*
+/**
  *To find whether image is potrait image or portrait
  */
 -(BOOL)isPotrait;

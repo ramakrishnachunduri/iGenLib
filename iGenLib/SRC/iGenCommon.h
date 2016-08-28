@@ -12,8 +12,6 @@
 #import "NSObject+XML+iGenLIB.h"
 #import "XMLReader.h"
 
-#define RELEASE_SAFELY(__POINTER){[__POINTER release]; __POINTER = nil;}
-
 @interface iGenCommon : NSObject 
 {
 }

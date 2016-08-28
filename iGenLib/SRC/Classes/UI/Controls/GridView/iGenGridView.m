@@ -7,7 +7,7 @@
 //
 
 #import "iGenGridView.h"
-#import "iGenCommon.h"
+#import "iGenTools.h"
 
 // declare page view
 @interface iGenGridPageView : UIView

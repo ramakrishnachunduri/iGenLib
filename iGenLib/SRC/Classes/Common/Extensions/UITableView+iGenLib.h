@@ -24,7 +24,7 @@
 #import <QuartzCore/QuartzCore.h>
 
 @interface UITableView (iGenLib)
-/*
+/**
  * removes background of any TableView and makes it transparent
  */
 -(void)removeBackground;

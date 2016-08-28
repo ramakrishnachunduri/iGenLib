@@ -20,8 +20,8 @@
 @property(nonatomic,retain) NSString *placeHolder;
 
 /**
- *  Assign values to show in dropdown list. Use Comma seperated string. Ex : @"Value 1,Value 2,Value 3"
- *  Use 2 Commas in case if values are allowed to have Comma. Ex : @"Rupees 1,000 to 5,000,,Rupees 6,000 to 9,000"
+ *  Assign values to show in dropdown list. Use Comma seperated string like @"Value 1,Value 2,Value 3".
+ *  (or) Use 2 Commas in case if values are allowed to have Comma like @"Rupees 1,000 to 5,000,,Rupees 6,000 to 9,000"
  */
 @property(nonatomic,retain) NSString *dropDownValues;
 

@@ -24,6 +24,10 @@
 
 @interface NSThread (MultiObjects)
 
+/**
+ * Conventionally you are allowed to start athread passing only one object this will let you perform with multiple objects
+ * @result if selector/method is found it will be invoked, if not it will throw correspondent exception.
+ */
 + (void)detachNewThreadSelector:(SEL)aSelector toTarget:(id)aTarget withObjects:(id)object,... NS_REQUIRES_NIL_TERMINATION;
 
 @end

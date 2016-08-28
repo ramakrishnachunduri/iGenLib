@@ -19,7 +19,6 @@
  *  \n You should have received a copy of the GNU General Public License
  *  \n along with iGenLib.  If not, see <http://www.gnu.org/licenses/>.
  */
-
 @interface NSObject (iGenLib)
 
 /**
@@ -44,14 +43,23 @@
  */
 -(id)nullToBlank;
 
-@end
-
-@interface NSObject (MultiObjects)
-
+/**
+ * Conventionally you are allowed to perform a selector on main thread with only one object this will let you perform with multiple objects
+ * @result if selector/method is found it will be invoked, if not it will throw correspondent exception.
+ */
 -(void)performSelectorOnMainThread:(SEL)aSelector withObjects:(id)object,... NS_REQUIRES_NIL_TERMINATION;
 
+
+/**
+ * Conventionally you are allowed to perform a selector with a delay passing only one object this will let you perform with multiple objects
+ * @result if selector/method is found it will be invoked, if not it will throw correspondent exception.
+ */
 -(void)performSelector:(SEL)aSelector afterDelay:(NSTimeInterval)delay withObjects:(id)object,... NS_REQUIRES_NIL_TERMINATION;
 
+/**
+ * Conventionally you are allowed to perform a selector passing only one object this will let you perform with multiple objects
+ * @result if selector/method is found it will be invoked, if not it will throw correspondent exception.
+ */
 -(void)performSelector:(SEL)aSelector withValues:(id)value,... NS_REQUIRES_NIL_TERMINATION;
 
 @end

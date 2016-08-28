@@ -90,11 +90,6 @@
 	return UIInterfaceOrientationPortrait;
 }
 
-/**
- *  Overridable method by which subclass can specify orientations to be used without messing with iOS6/iOS7 methods
- *  @param interfaceOrientation orientation view is about to rotate
- *  @return decision making bookean lets View respont to orientation changes
- */
 - (BOOL)shouldRotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
 	return (interfaceOrientation==UIInterfaceOrientationPortrait);
@@ -108,30 +103,16 @@
 #pragma mark -
 #pragma mark modal animations
 
-/**
- *  A method to decide if UI presentation layer uses custom transition when presenting modal views
- *  By default this stays NO and no transitions/animations will be used
- *  Note that the transitions wont be applied for email composer as it is prohibited
- *  @return Boolean stating animation necessity
- */
 -(BOOL)isCustomAnimationsNeededForModals
 {
 	return NO;
 }
 
-/**
- *  Must be overriden when isCustomAnimationsNeededForModals is YES
- *  @return UIViewControllerAnimatedTransitioning object to be used when presenting with animation
- */
 -(NSObject<UIViewControllerAnimatedTransitioning>*)animationForPresentingView
 {
 	return nil;
 }
 
-/**
- *  Must be overriden when isCustomAnimationsNeededForModals is YES
- *  @return UIViewControllerAnimatedTransitioning object to be used when dismissing modal after it is presented with animation
- */
 -(NSObject<UIViewControllerAnimatedTransitioning>*)animationForDismissingView
 {
 	return nil;
@@ -168,35 +149,17 @@
 #pragma mark -
 #pragma mark Alerts
 
-/**
- *  Presents an alert message whose delegate is subclass itself
- *  A handy method that helps preventing writing few lines of code everytime alert is to be shown
- *  @param message Message to display
- */
 -(void)presentAlertMessage:(NSString*)message
 {
     [self presentAlertMessage:message withTag:GENERAL_ALERT_TAG];
 }
 
-/**
- *  Presents an alert message whose delegate is subclass itself
- *  A handy method that helps preventing writing few lines of code everytime alert is to be shown
- *  @param message Message to display
- *  @param tag     a unique number to uniquely identify alerts being shown
- */
 -(void)presentAlertMessage:(NSString*)message withTag:(NSInteger)tag
 {
     NSString *prodName = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"];
 	[self presentAlertMessage:message withTitle:prodName andTag:tag];
 }
 
-/**
- *  Presents an alert message whose delegate is subclass itself
- *  A handy method that helps preventing writing few lines of code everytime alert is to be shown
- *  @param message    Message to display
- *  @param alertTitle title for alert message
- *  @param tag        a unique number to uniquely identify alerts being shown
- */
 -(void)presentAlertMessage:(NSString*)message withTitle:(NSString*)alertTitle andTag:(NSInteger)tag
 {
 	UIAlertView *alert=[[UIAlertView alloc] initWithTitle:alertTitle message:message delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
@@ -212,19 +175,11 @@
 #pragma mark -
 #pragma mark Keyboard
 
-/**
- *  Decides if keyboard listener should be active on the VC
- *  When the view controller doesn't involve any textboxes it is optional to return No for it
- *  @return Boolean that ommits/activates keyboard listener
- */
 -(BOOL)isKeyBoardListeningActive
 {
 	return YES;
 }
 
-/**
- *  Triggers keyboard shown explicitly
- */
 -(void)triggerKeyboardShown
 {
 	if(self.lastRecievedKeyboardInfo)
@@ -264,11 +219,6 @@
 	return nil;
 }
 
-/**
- *  A notifying method that is triggered when keyboard is shown
- *  This method can be overriden by subclasses allowing them to resize the ui respectively to utilize available spave on screen
- *  @param keyTop the position of keyboard where it is started from, would vary based on keyboard toolbar visibility
- */
 -(void)keyboardDidAppearedAtTop:(CGFloat)keyTop
 {
 	if([self leftButtonsInKeyBoard]!=nil)
@@ -292,18 +242,11 @@
 	}
 }
 
-/**
- *  A notifying method triggered when keyboard is hidden
- *  This method cab be overriden by subclasses allowing to resize ui to utilize full space on screen
- */
 -(void)keyboardDidDisappeared
 {
 	
 }
 
-/**
- *  Notifies that keyboard field is changed while keyboard is still displayed
- */
 -(void)activeKeyboardFieldChanged
 {
 	

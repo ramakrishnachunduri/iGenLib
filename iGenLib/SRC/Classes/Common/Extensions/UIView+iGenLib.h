@@ -21,9 +21,22 @@
  */
 
 #import <UIKit/UIKit.h>
-#import <QuartzCore/QuartzCore.h>
 @interface UIView (iGenLib)
+/**
+ * iterates through all the subviews and finds the active first responder
+ * @return if found first responder or a nil
+ */
 - (UIView *)findFirstResponder;
+
+/**
+ * Recursively looks for subviews in a view
+ * @return array with all the subviews in the view
+ */
 - (NSMutableArray*)allSubViews;
+
+/**
+ * Takes an image from view kind of taking screenshot but only a particular view
+ * @return image with view drawn in it
+ */
 - (UIImage*)toImage;
 @end

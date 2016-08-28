@@ -19,11 +19,6 @@
 
 #pragma mark collection view delegate and datasource
 
-/**
- *  Reloads data in the passed collection view
- *  When same subclass has multiple collectionview's this does job
- *  @param collectionView Collection view in which data to be reloaded
- */
 -(void)reloadDataInCollectionView:(UICollectionView*)collectionView
 {
     collectionView.delegate=self;
@@ -48,38 +43,17 @@
     collectionView.backgroundColor=self.view.backgroundColor;
 }
 
-/**
- *  Custom cell Class to use in collectionview
- *  If not overriden uses UICollectionViewCell
- *  @param collectionView collection view in which passed custom cell is targeted
- *
- *  @return UICollectionViewCell or its sub class
- */
 -(Class)classOrNibForReusingCellInCollectionView:(UICollectionView *)collectionView
 {
     return [UICollectionViewCell class];
 }
 
-/**
- *  Reusable idendfer for cell in CollectionView
- *  If not overridden the class name of custom cell or UICollectionViewCell is used
- *  Optional in the view is not having multiple collection views
- *  @param collectionView CollectionView the identified is targeted to
- *  @return reusable identifier for cell in collection view.
- */
 -(NSString*)reuseIdentifierForCellInCollectionView:(UICollectionView*)collectionView;
 {
     NSString *identifier=NSStringFromClass([self classOrNibForReusingCellInCollectionView:collectionView]);
     return identifier;
 }
 
-/**
- *  Notify subclass a cell is created for passed class or nib name
- *  Do further cell customizations here
- *  @param collectionView Collection view where cell is created
- *  @param collectionCell Cell which is created
- *  @param indexPath      indexpath for which cell is created for
- */
 -(void)collectionView:(UICollectionView *)collectionView cellCreated:(UICollectionViewCell*)collectionCell atIndexPath:(NSIndexPath *)indexPath
 {
     
@@ -103,24 +77,11 @@
     return 0;
 }
 
-/**
- *  Adds a little padding at top and bottom of collection view
- *  @param collectionView Collection which the padding is needed for
- *
- *  @return height to be padding in collection view
- */
 -(CGFloat)paddingAtTopAndBottomForCollectionView:(UICollectionView*)collectionView
 {
     return 10.0f;
 }
 
-
-/**
- *  Adds a little padding at bottom of collection view , to be used in combination of above method
- *  @param collectionView Collection which the padding is needed for
- *
- *  @return height to be padding in bottom collection view
- */
 -(CGFloat)paddingAtBottomForCollectionView:(UICollectionView*)collectionView
 {
 	return CGFLOAT_MAX;
@@ -179,12 +140,6 @@
 #pragma mark -
 #pragma mark collection view indexpath handling
 
-/**
- * Preserves passed indexpath for collection view
- * Useful when multiple collectionviews are there in same VC
- *  @param indexPath      indexpath to preserve, if nil passed old one removed
- *  @param collectionView collectionview where indexpath is triggered
- */
 -(void)assignLastClickedIndexPath:(NSIndexPath*)indexPath forCollectionView:(UICollectionView*)collectionView
 {
 	NSString *key=[NSString stringWithFormat:@"%p",collectionView];
@@ -203,11 +158,6 @@
 	}
 }
 
-/**
- *  Retrieves preserved indexpath by assignLastClicked.... method
- *  @param collectionView Collection view on which indexpath should be retrieved
- *  @return indexpath object
- */
 -(NSIndexPath*)lastClickedIndexPathInCollectionView:(UICollectionView*)collectionView
 {
 	NSString *key=[NSString stringWithFormat:@"%p",collectionView];

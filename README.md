@@ -14,6 +14,8 @@ the Free Software Foundation at http://www.gnu.org/licenses/, either version 3 o
 List of Components
 - GridView
 - MoveAndScaleImage
+- DropDownList
+- Padded Label and Padded Text Field.
 
 List of Extensions
 - Array extension to sort alphabetically when it has strings.

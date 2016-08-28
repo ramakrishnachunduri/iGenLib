@@ -21,7 +21,6 @@
  */
 
 #import <UIKit/UIKit.h>
-#import "iGenCommon.h"
 #import "iGenImageScaleControllerDelegate.h"
 
 @interface iGenImageScaleController : UIViewController<UIScrollViewDelegate>

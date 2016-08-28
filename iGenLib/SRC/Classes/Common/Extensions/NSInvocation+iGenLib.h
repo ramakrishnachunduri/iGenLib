@@ -24,8 +24,16 @@
 
 @interface NSInvocation (MultiObjects)
 
+/**
+ * Invocation of method with multiple arguments as array
+ * @result if selector/method is found it will be invoked, if not it will throw correspondent exception.
+ */
 + (NSInvocation*)invocationWithSelector:(SEL)aSelector toTarget:(id)aTarget andArgument:(id)object otherArgs:(va_list)otherArgs;
 
+/**
+ * Invocation of method with multiple arguments
+ * @result if selector/method is found it will be invoked, if not it will throw correspondent exception.
+ */
 + (NSInvocation*)invocationWithSelector:(SEL)aSelector toTarget:(id)aTarget andArguments:(id)object,... NS_REQUIRES_NIL_TERMINATION;
 
 @end

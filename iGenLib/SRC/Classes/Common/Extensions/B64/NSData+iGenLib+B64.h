@@ -21,6 +21,16 @@
  */
 
 @interface	NSData (base64Encoding)
+/**
+ *  Encodes the data in reciever object to a base64 string.
+ *  @return base64 string.
+ */
 -(NSString *) toBase64String;
-+(NSData   *) decodeBase64String:(NSString *)decodeString;
+
+/**
+ *  Decodes the base64 string passed into Data object
+ *  @param base64String base64 String to parse and decode
+ *  @return NSData object with decoded base64 data i.e., image,object,svg etc.
+ */
++(NSData *) decodeBase64String:(NSString *)base64String;
 @end
