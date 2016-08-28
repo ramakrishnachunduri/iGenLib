@@ -13,19 +13,53 @@ the Free Software Foundation at http://www.gnu.org/licenses/, either version 3 o
 
 List of Components
 - GridView
+   - Grid in either horizontal or vertical layouts 
+   - Shows pager only in horizontal mode
 - MoveAndScaleImage
+   - Allows to zoom the image and crop to the visible portion.
 - DropDownList
+   - Mimics conventional dropdown list instead of using ActionSheet in iPhone and PopOver in iPad
 - Padded Label and Padded Text Field.
 
+&nbsp;&nbsp;
+&nbsp;&nbsp;
+
 List of Extensions
-- Array extension to sort alphabetically when it has strings.
-- Array extensions to search objects which starts with a specific string or contains specific string
-- Array extension to return first object (similar to default lastObject method)
-- Mutable Array extensions to search and remove objects which starts with specific string or contains specific string
-- NSBundle extension to give the path based on the active locale from specific .lproj directory.
-- NSDate extension to convert date to string based on the format.
-- NSDate extensions to calculate difference between dates.
-- NSObject extensions to prevent Unrecognized Selector sent when we are unaware of targeted class
-- NSString extensions to help in Searching,formatting,converting to date,calculating no.of.lines etc
-- NSThread extensions to help passing multiple objects when detaching a new thread.
-- NSInvocation extensions to help passing multiple objects for invocations.
+- NSArray
+  - Sort alphabetically when it has strings.
+  - Search objects which starts with a specific string or contains specific string
+  - First object (similar to default lastObject method)
+- NSMutableArray
+  - Search and remove objects which starts with specific string or contains specific string
+- NSBundle
+  - Give the path of a resource based on the active locale from specific .lproj directory.
+- NSDate
+  - Convert date to string based on the format.
+  - Calculate difference between dates.
+  - First and last dates in a month or week
+  - Count days in a month - 28,29,30 and 31 based on calender year
+- NSObject
+  - Extension to prevent Unrecognized Selector sent when we are unaware of targeted class
+- NSString
+  - Convert to date based on format 
+  - Extensions to help in Searching
+  - Formatting - Add lines, spaces, html breaks etc
+  - Calculate number of lines
+  - Version Comparision - For now compares max of 3 decimals 1.1.1 is greater than 1.1.0 or 1.1
+- NSThread
+  - Extensions to help passing multiple objects when detaching a new thread.
+- NSInvocation
+  - Extensions to help passing multiple objects for invocations.
+- UIColor
+  - Convert Hexa to UIColor - FF0000 gives Red 
+  - Convert rgb or rgba to UIColor rgb(255,0,0) or rgba(255,0,0,1) returns red
+- UIImage
+  - Rotate image by degrees
+  - Scales image proportionally preserving aspect ratio
+  - Scales to specific size either with or without aspect ratio.
+  - Verify landscape or potrait image
+- UIView
+  - Recursively loop through all the sub views
+  - Calculate height for specific content in desired width.
+  - Convert view to an image - kind of screenshot but only for view
+  - Draw a view in context - draw over pdf, graph or another image.
